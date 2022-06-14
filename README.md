@@ -12,4 +12,4 @@
 Основная область применения JavaScript — веб. С его помощью можно обмениваться данными между браузером и сервером, изменять HTML и CSS веб-страницы, создавать веб-приложения.
 
 ###_Ссылка на проект:_
-* https://pikich.github.io/russian-travel/
+* https://pikich.github.io/mesto/index.html
