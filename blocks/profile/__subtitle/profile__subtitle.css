@@ -1,7 +1,7 @@
 .profile__subtitle {
     width: 336px;
-    height: 18px;
-    font-family: 'Inter';
+    min-height: 18px;
+    font-family: 'Inter', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -15,7 +15,7 @@
         font-size: 14px;
         line-height: 17px;
         width: 282px;
-        height: 14px;
+        min-height: 14px;
         margin: 14px auto 0;
         text-align: center;
     }

@@ -4,10 +4,10 @@ const closePopupButton = document.querySelector('.popup__close')
 
 
 const titleElement = document.querySelector('.profile__title')
-const nameFiledElement = document.querySelector('.popup__input_name')
+const nameFiledElement = document.querySelector('.popup__input_type_name')
 
 const subTitleElement = document.querySelector('.profile__subtitle')
-const professionFiledElement = document.querySelector('.popup__input_profession')
+const professionFiledElement = document.querySelector('.popup__input_type_profession')
 
 const formElement = document.querySelector('.popup__form')
 
@@ -26,15 +26,15 @@ function closePopup(popupElement) {
 }
 
 
-editButton.addEventListener('click', function() {
-    openPopup(popup)
-   nameFiledElement.value = titleElement.textContent;
-})
 
 editButton.addEventListener('click', function() {
     openPopup(popup)
+   nameFiledElement.value = titleElement.textContent;
+   openPopup(popup)
     professionFiledElement.value = subTitleElement.textContent;
 })
+
+
 
 closePopupButton.addEventListener('click', function() {
     closePopup(popup)

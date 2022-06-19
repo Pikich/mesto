@@ -1,5 +1,5 @@
-.popup__save_text {
-    font-family: 'Inter';
+.popup__save-text {
+    font-family: 'Inter', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -9,7 +9,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .popup__save_text  {
+    .popup__save-text  {
         font-size: 14px;
         line-height: 17px;
     }

@@ -11,64 +11,79 @@
 
       <header class="header">
         <img class="header__logo" alt="Лого" src="./images/Vector.svg">
+        <div class="header__line"></div>
       </header>
 
       <main>
         <section class="profile">
-          <div class="profile__avatar">
+          
             <img class="profile__image" src="./images/image(1).png" alt="Фото">
-          </div>
+          
           <div class="profile__info">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
-            <button class="profile__edit-button"></button>
+            <button type="submit" class="profile__edit-button"></button>
             <p class="profile__subtitle">Исследователь океана</p>
           </div>
           
-          <button class="profile__add-button"></button>
+          <button type="submit" class="profile__add-button"></button>
         </section>
 
-        <section class="elements">
-          <ul class="element">
-            <li><img class="element__image" src="./images/Карачаевск.png" alt="Карачаевск"></li>
-            <li><div class="element__container">
-              <h2 class="element__title">Карачаевск</h2>
-              <button class="element__like element__like_liked"></button>
-            </div></li>
-          </ul>
-          <ul class="element">
-            <li><img class="element__image" src="./images/Эльбрус.png" alt="Эльбрус"></li>
-            <li><div class="element__container">
-              <h2 class="element__title">Гора Эльбрус</h2>
-              <button class="element__like element__like_liked"></button>
-            </div></li>
-          </ul>
-          <ul class="element">
-            <li><img class="element__image" src="./images/Домбай.png" alt="Домбай"></li>
-            <li><div class="element__container">
-              <h2 class="element__title">Домбай</h2>
-              <button class="element__like element__like_liked"></button>
-            </div></li>
-          </ul>
-          <ul class="element">
-            <li><img class="element__image" src="./images/Эльбрус.png" alt="Эльбрус"></li>
-            <li><div class="element__container">
-              <h2 class="element__title">Гора Эльбрус</h2>
-              <button class="element__like element__like_liked"></button>
-            </div></li>
-          </ul>
-          <ul class="element">
-            <li><img class="element__image" src="./images/Домбай.png" alt="Домбай"></li>
-            <li><div class="element__container">
-              <h2 class="element__title">Домбай</h2>
-              <button class="element__like element__like_liked"></button>
-            </div></li>
-          </ul>
-          <ul class="element">
-            <li><img class="element__image" src="./images/Карачаевск.png" alt="Карачаевск"></li>
-            <li><div class="element__container">
-              <h2 class="element__title">Карачаево-Ч...</h2>
-              <button class="element__like element__like_liked"></button>
-            </div></li>
+        <section>
+          <ul class="elements">
+            <li>
+              <div class="element">
+                <img class="element__image" src="./images/Карачаевск.png" alt="Карачаевск">
+                <div class="element__container">
+                  <h2 class="element__title">Карачаевск</h2>
+                  <button type="button" class="element__like element__like_liked"></button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="element">
+                <img class="element__image" src="./images/Эльбрус.png" alt="Эльбрус">
+                <div class="element__container">
+                  <h2 class="element__title">Гора Эльбрус</h2>
+                  <button type="button" class="element__like element__like_liked"></button>
+                </div>
+              </div>  
+            </li>
+            <li> 
+              <div class="element">
+                <img class="element__image" src="./images/Домбай.png" alt="Домбай">
+                <div class="element__container">
+                  <h2 class="element__title">Домбай</h2>
+                  <button type="button" class="element__like element__like_liked"></button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="element">
+                <img class="element__image" src="./images/Эльбрус.png" alt="Эльбрус">
+                <div class="element__container">
+                  <h2 class="element__title">Гора Эльбрус</h2>
+                  <button type="button" class="element__like element__like_liked"></button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="element">
+                <img class="element__image" src="./images/Домбай.png" alt="Домбай">
+                <div class="element__container">
+                  <h2 class="element__title">Домбай</h2>
+                  <button type="button" class="element__like element__like_liked"></button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="element">
+                <img class="element__image" src="./images/Карачаевск.png" alt="Карачаевск">
+                <div class="element__container">
+                  <h2 class="element__title">Карачаево-Ч...</h2>
+                  <button type="button" class="element__like element__like_liked"></button>
+                </div>
+              </div>
+            </li>
           </ul>
         </section>
       </main>
@@ -79,13 +94,15 @@
 
       <div class="popup">
         <div class="popup__body">
-          <p class="popup__title">Редактировать профиль</p>
-          <form class="popup__form">
-            <input type="text" class="popup__input popup__input_name" placeholder="Жак-Ив Кусто">
-            <input type="text" class="popup__input popup__input_profession" placeholder="Исследователь океана">
-            <button type="submit" class="popup__save popup__save_text">Сохранить</button>
+          <h2 class="popup__title">Редактировать профиль</h2>
+          <form name="info" class="popup__form">
+            <input type="text" class="popup__input popup__input_type_name" placeholder="Жак-Ив Кусто">
+            <div class="popup__input_line"></div>
+            <input type="text" class="popup__input popup__input_type_profession" placeholder="Исследователь океана">
+            <div class="popup__input_line"></div>
+            <button type="submit" class="popup__save popup__save-text">Сохранить</button>
           </form>
-          <button class="popup__close"></button>
+          <button type="submit" class="popup__close"></button>
         </div>
       </div>
 

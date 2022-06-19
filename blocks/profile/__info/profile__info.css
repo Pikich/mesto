@@ -3,8 +3,9 @@
     display: grid;
     grid-template-columns: 294px 24px;
     column-gap: 18px;
-    grid-template-rows: 39px 18px;
+    grid-template-rows: 2fr 1fr;
     row-gap: 16px;
+    min-height: 73px;
 }
 
 @media screen and (max-width: 767px) {

@@ -1,7 +1,7 @@
 .footer__signature {
     width: 318px;
-    height: 18px;
-    font-family: 'Inter';
+    min-height: 18px;
+    font-family: 'Inter', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -13,7 +13,7 @@
 @media screen and (max-width: 767px) {
     .footer__signature  {
         width: 282px;
-        height: 14px;
+        min-height: 14px;
         margin: 48px 19px 36px;
         font-size: 14px;
         line-height: 17px;
