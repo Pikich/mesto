@@ -17,7 +17,7 @@
       <main>
         <section class="profile">
           
-            <img class="profile__image" src="./images/image(1).png" alt="Фото">
+          <img class="profile__image" src="./images/image(1).png" alt="Фото">
           
           <div class="profile__info">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
@@ -30,60 +30,7 @@
 
         <section>
           <ul class="elements">
-            <li class="element">
-              
-                <img class="element__image" src="./images/Карачаевск.png" alt="Карачаевск">
-                <div class="element__container">
-                  <h2 class="element__title">Карачаевск</h2>
-                  <button type="button" class="element__like element__like_liked"></button>
-                </div>
-              
-            </li>
-            <li class="element">
-              
-                <img class="element__image" src="./images/Эльбрус.png" alt="Эльбрус">
-                <div class="element__container">
-                  <h2 class="element__title">Гора Эльбрус</h2>
-                  <button type="button" class="element__like element__like_liked"></button>
-                </div>
-                
-            </li>
-            <li class="element"> 
-              
-                <img class="element__image" src="./images/Домбай.png" alt="Домбай">
-                <div class="element__container">
-                  <h2 class="element__title">Домбай</h2>
-                  <button type="button" class="element__like element__like_liked"></button>
-                </div>
-              
-            </li>
-            <li class="element">
-             
-                <img class="element__image" src="./images/Эльбрус.png" alt="Эльбрус">
-                <div class="element__container">
-                  <h2 class="element__title">Гора Эльбрус</h2>
-                  <button type="button" class="element__like element__like_liked"></button>
-                </div>
-              
-            </li>
-            <li class="element">
-              
-                <img class="element__image" src="./images/Домбай.png" alt="Домбай">
-                <div class="element__container">
-                  <h2 class="element__title">Домбай</h2>
-                  <button type="button" class="element__like element__like_liked"></button>
-                </div>
-              
-            </li>
-            <li class="element">
-              
-                <img class="element__image" src="./images/Карачаевск.png" alt="Карачаевск">
-                <div class="element__container">
-                  <h2 class="element__title">Карачаево-Ч...</h2>
-                  <button type="button" class="element__like element__like_liked"></button>
-                </div>
-              
-            </li>
+
           </ul>
         </section>
       </main>
@@ -106,7 +53,44 @@
         </div>
       </div>
 
+      <div class="popupPlace">
+        <div class="popupPlace__body">
+          <h2 class="popupPlace__title">Новое место</h2>
+          <form name="info" class="popupPlace__form">
+            <input type="text" class="popupPlace__input popupPlace__input_type_name" placeholder="Название">
+            
+            <input type="text" class="popupPlace__input popupPlace__input_type_link" placeholder="Ссылка на картинку">
+            
+            <button type="submit" class="popupPlace__save popupPlace__save-text">Создать</button>
+          </form>
+          <button type="button" class="popupPlace__close"></button>
+        </div>
+      </div>
+
+      <div class="popupImage">
+        <div class="popupImage__body">
+          
+          <button type="button" class="popupImage__close"></button>
+          
+          <img class="popupImage__big-image" src="#" alt="">
+          <h2 class="popupImage__title"></h2>
+        </div>
+      </div>
+
     </div>
+
+    <template class="template">
+      <li class="element">
+      
+        <img class="element__image" src="#" alt="">
+        <div class="element__container">
+          <h2 class="element__title"></h2>
+          <button type="button" class="element__like"></button>
+        </div>
+        <button class="element__trash"></button>
+    
+      </li>
+    </template>
 
     <script src="./scripts/index.js"></script>
   </body>

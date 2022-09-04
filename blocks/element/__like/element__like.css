@@ -1,12 +1,13 @@
 .element__like {
     background-image: url(../../../images/like.png);
     height: 19px;
-    width: 22px;
+    min-width: 22px;
     margin: 5px 5px -1px;
     padding: 0;
     border: 0;
     background-color: #FFFFFF;
     transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .element__like:hover {

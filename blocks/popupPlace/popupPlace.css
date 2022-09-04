@@ -1,4 +1,4 @@
-.popup {
+.popupPlace {
     position: fixed;
     display: flex;
     left: 0;
@@ -10,11 +10,13 @@
     align-items: center;
     visibility: hidden;
     opacity: 0;
-    transition:  visibility .3s linear,   opacity .3s linear;
+    transition: visibility .3s linear 0s,  opacity .3s linear;
+
 }
 
 .popup__isOpen {
+    display: flex;
     visibility: visible;
     opacity: 1;
-}
 
+}
