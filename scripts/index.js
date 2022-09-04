@@ -133,7 +133,6 @@ function addinitialCards(initialCards) {
   newElement.querySelector('.element__image').alt = initialCards.name;
   
   newElement.querySelector('.element__image').addEventListener('click', openImage);
-/*   newElement.querySelector('.element__title').addEventListener('click', openTitle); */
   
 /*   создаем обработчик клика на лайк, присваиваем класс*/
   newElement.querySelector('.element__like').addEventListener('click', function (evt) {
