@@ -31,7 +31,7 @@
 @import url(../blocks/footer/footer.css);
 
 @import url(../blocks/popup/popup.css);
-@import url(../blocks/popup/__profile/popup__profile.css);
+@import url(../blocks/popup-profile/popup-profile.css);
 @import url(../blocks/popup/__card/popup__card.css);
 @import url(../blocks/popup/__image/popup__image.css);
 
