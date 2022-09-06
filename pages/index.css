@@ -32,13 +32,13 @@
 
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup-profile/popup-profile.css);
-@import url(../blocks/popup/__card/popup__card.css);
-@import url(../blocks/popup/__image/popup__image.css);
+@import url(../blocks/popup-card/popup-card.css);
+@import url(../blocks/popup-image/popup-image.css);
+@import url(../blocks/popup-bgcolor/popup-bgcolor.css);
 
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__container-image/popup__container-image.css);
 @import url(../blocks/popup/__big-image/popup__big-image.css);
-@import url(../blocks/popup/popup__bgcolor.css);
 
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__title-image/popup__title-image.css);
