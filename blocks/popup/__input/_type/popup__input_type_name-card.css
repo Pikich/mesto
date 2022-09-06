@@ -1,0 +1,10 @@
+.popup__input_type_name-card {
+    min-height: 14px;
+    margin-top: 54px;
+}
+
+@media screen and (max-width: 767px) {
+    .popup__input_type_name-card {
+        margin-top: 75px;
+    }
+}

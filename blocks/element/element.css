@@ -8,6 +8,16 @@
     margin: 0;
     line-height: 0;
     position: relative;
+    margin-bottom: 20px;
+}
+.element:last-of-type {
+    margin-bottom: 0;
+}
+.element:nth-child(5n) {
+    margin-bottom: 0;
+}
+.element:nth-child(4n) {
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
