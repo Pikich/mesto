@@ -21,11 +21,29 @@ const templateElement = document.querySelector('.template').content;
 
 function openPopup(popupElement) {
     popupElement.classList.add('popup__isOpen')
+    document.addEventListener('keydown', closePopupEsc);
+    popupElement.addEventListener('mousedown', closePopupOverlay);
 };
 
 function closePopup(popupElement) {
     popupElement.classList.remove('popup__isOpen')
+    document.removeEventListener('keydown', closePopupEsc);
+    popupElement.removeEventListener('mousedown', closePopupOverlay);
 };
+
+function closePopupOverlay(evt) {
+  if (evt.target === evt.currentTarget) {
+    const popupIsOpen = document.querySelector('.popup__isOpen');
+    closePopup(popupIsOpen);
+  }
+}
+
+function closePopupEsc(evt) {
+  if (evt.key === 'Escape') {
+    const popupIsOpen = document.querySelector('.popup__isOpen');
+    closePopup(popupIsOpen);
+  }
+}
 
 /* функция отправки данных */
 function handleSubmitCard(e) {
@@ -114,8 +132,8 @@ imageClosePopup.addEventListener('click', function() {
   closePopup(imagePopup)
 });
 /* вызов функции добавления карточек */
-initialCards.forEach(initialCards => {
-  const cardElement = createCard(initialCards);
+initialCards.forEach(initialCard => {
+  const cardElement = createCard(initialCard);
   listElement.prepend(cardElement);
 });
 /* обработчик отправки данных*/

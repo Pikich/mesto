@@ -9,6 +9,15 @@
     margin-bottom: 37px;
     margin-left: 36px;
     transition: opacity 0.3s ease-in-out;
+
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+
 }
 
 .popup__create:hover {
@@ -23,5 +32,8 @@
         margin-top: 45px;
         margin-bottom: 25px;
         margin-left: 22px;
+
+        font-size: 14px;
+        line-height: 17px;
     }
 } 
