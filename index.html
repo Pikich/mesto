@@ -18,10 +18,10 @@
           <img class="profile__image" src="./images/image(1).png" alt="Фото">
           <div class="profile__info">
             <h1 class="profile__title-profile">Жак-Ив Кусто</h1>
-            <button type="button" class="profile__edit-button"></button>
+            <button aria-label="edit" type="button" class="profile__edit-button"></button>
             <p class="profile__subtitle-profile">Исследователь океана</p>
           </div>
-          <button type="button" class="profile__add-button"></button>
+          <button aria-label="add" type="button" class="profile__add-button"></button>
         </section>
 
         <section>
@@ -46,10 +46,10 @@
             <input required minlength="2" maxlength="200" id="profession-profile" type="text" class="popup__input popup__input_type_profession-profile" placeholder="О себе">
             <span class="profession-profile-error popup__input-error"></span>
 
-            <button type="submit" class="popup__submit popup__save" disabled>Сохранить</button>
+            <button type="submit" class="popup__submit popup__save" disabled enabled>Сохранить</button>
 
           </form>
-          <button type="button" class="popup__profile-close"></button>
+          <button aria-label="close" type="button" class="popup__profile-close"></button>
         </div>
       </div>
 
@@ -67,13 +67,13 @@
             <button type="submit" class="popup__submit popup__create" disabled>Создать</button>
 
           </form>
-          <button type="button" class="popup__card-close"></button>
+          <button aria-label="close" type="button" class="popup__card-close"></button>
         </div>
       </div>
 
       <div class="popup popup-image popup-bgcolor">
         <div class="popup__container-image">
-          <button type="button" class="popup__image-close"></button>
+          <button aria-label="close" type="button" class="popup__image-close"></button>
           <img class="popup__big-image" src="#" alt="">
           <h2 class="popup__title-image"></h2>
         </div>
@@ -83,17 +83,19 @@
 
     <template class="template">
       <li class="element">
-        <img class="element__image" src="#" alt="">
+        <img class="element__image" src="#" alt="foto">
         <div class="element__container">
           <h2 class="element__title"></h2>
-          <button type="button" class="element__like"></button>
+          <button aria-label="like" type="button" class="element__like"></button>
         </div>
-        <button class="element__trash"></button>
+        <button aria-label="delete" class="element__trash"></button>
       </li>
     </template>
 
+    <script src="./scripts/settingsObject.js"></script>
     <script src="./scripts/validate.js"></script>
     <script src="./scripts/cards.js"></script>
     <script src="./scripts/index.js"></script>
+    
   </body>
 </html>

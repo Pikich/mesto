@@ -1,6 +1,5 @@
 .popup__input-error_active {
     display: inline-block;
-    width: 164px;
     height: 12px;
     font-family: 'Inter', 'Arial', sans-serif;
     font-style: normal;
@@ -8,5 +7,13 @@
     font-size: 12px;
     line-height: 15px;
     color: #FF0000;
-    padding: 5px 0 0 36px;
+    margin: 0 0 0 36px;
     }
+
+    @media screen and (max-width: 767px) {
+        .popup__input-error_active {
+            margin: 0 0 0 22px;
+            }
+    } 
+    
+

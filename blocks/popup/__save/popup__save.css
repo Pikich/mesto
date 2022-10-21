@@ -5,7 +5,7 @@
     border-radius: 2px;
     cursor: pointer;
     padding: 0;
-    margin-top: 48px;
+    margin-top: 16px;
     margin-bottom: 37px;
     margin-left: 36px;
     transition: opacity 0.3s ease-in-out;
@@ -28,7 +28,7 @@
         width: 238px;
         height: 46px;
         padding: 0;
-        margin-top: 45px;
+        margin-top: 15px;
         margin-bottom: 25px;
         margin-left: 22px;
 

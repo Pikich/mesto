@@ -23,6 +23,9 @@ function openPopup(popupElement) {
     popupElement.classList.add('popup__isOpen')
     document.addEventListener('keydown', closePopupEsc);
     popupElement.addEventListener('mousedown', closePopupOverlay);
+    const submitButtonInactive = popupElement.querySelector('.popup__submit')
+    submitButtonInactive.classList.add('popup__submit_inactive');
+    submitButtonInactive.setAttribute('disabled', true);
 };
 
 function closePopup(popupElement) {
@@ -32,9 +35,8 @@ function closePopup(popupElement) {
 };
 
 function closePopupOverlay(evt) {
-  if (evt.target === evt.currentTarget) {
-    const popupIsOpen = document.querySelector('.popup__isOpen');
-    closePopup(popupIsOpen);
+  if (evt.target === evt.currentTarget, evt.button === 0) {
+    closePopup(evt.target);
   }
 }
 
@@ -50,8 +52,7 @@ function handleSubmitCard(e) {
   e.preventDefault()
   initialCards.name = inputElementCardName.value;
   initialCards.link = inputElementCardLink.value;
-  inputElementCardName.value = '';
-  inputElementCardLink.value = '';
+  cardPopup.querySelector('.popup__card-form').reset();
   const cardElement = createCard(initialCards);
   listElement.prepend(cardElement);
   closePopup(cardPopup);
