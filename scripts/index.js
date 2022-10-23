@@ -32,6 +32,8 @@ function closePopup(popupElement) {
     popupElement.classList.remove('popup__isOpen')
     document.removeEventListener('keydown', closePopupEsc);
     popupElement.removeEventListener('mousedown', closePopupOverlay);
+    const submitButtonInactive = popupElement.querySelector('.popup__submit')
+    submitButtonInactive.classList.remove('popup__submit_active');
 };
 
 function closePopupOverlay(evt) {
